@@ -390,3 +390,102 @@ footer {
   text-align: center;
   padding: 5rem;
 }
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* Nav adjustments */
+  .desktop-nav {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .desktop-nav__links-social-resume {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .desktop-nav__links {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  /* Me Section */
+  #me {
+    flex-direction: column;
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+
+  .me__img {
+    height: 15rem; /* smaller image for mobile */
+  }
+
+  .me__btns {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  /* About Section */
+  #about {
+    padding: 5rem 1rem;
+  }
+
+  .about_container-experience-education {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .about__info {
+    padding: 1.5rem 2rem;
+    width: 100%;
+  }
+
+  .about_description {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  /* Experience Section */
+  #experience {
+    padding: 5rem 1rem;
+  }
+
+  .about-containers {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .details-container {
+    padding: 1.5rem 2rem;
+    width: 100%;
+  }
+
+  .article-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Contact Section */
+  #contact-me {
+    padding: 5rem 1rem;
+  }
+
+  .contact-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 2rem 1rem;
+  }
+
+  /* Images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
