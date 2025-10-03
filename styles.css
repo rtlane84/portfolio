@@ -386,6 +386,26 @@ article .icon {
   width: 100%; /* allow responsive shrinking */
 }
 
+.contact-info p {
+  color: var(--color-black);
+}
+
+.contact-info a {
+  text-decoration: none;
+  border-bottom: 3px solid transparent; /* invisible underline */
+  color: var(--color-black);
+}
+
+.contact-info a:hover {
+  color: var(--color-red);
+  border-bottom-color: var(--color-red);
+  transition: all 0.3s ease;
+}
+
+.contact-info p span {
+  font-size: 1rem;
+}
+
 footer {
   text-align: center;
   padding: 5rem;
