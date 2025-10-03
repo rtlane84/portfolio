@@ -398,6 +398,7 @@ footer {
     flex-direction: column;
     gap: 1rem;
     padding: 1rem 0;
+    align-items: center; /* center logo + links horizontally */
   }
 
   .desktop-nav__links-social-resume {
@@ -412,20 +413,43 @@ footer {
     align-items: center;
   }
 
+  .desktop-nav__links a {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
   /* Me Section */
   #me {
     flex-direction: column;
     padding: 5rem 1rem;
     text-align: center;
+    gap: 1.5rem;
   }
 
   .me__img {
-    height: 15rem; /* smaller image for mobile */
+    height: 15rem;
+    width: auto;
+    max-width: 80%;
+  }
+
+  .me__info {
+    align-items: center;
+    text-align: center;
   }
 
   .me__btns {
     flex-direction: column;
     gap: 0.5rem;
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .me__btns a {
+    width: 100%;
+  }
+
+  .me__social {
+    justify-content: center;
   }
 
   /* About Section */
@@ -433,19 +457,29 @@ footer {
     padding: 5rem 1rem;
   }
 
+  .about__heading {
+    text-align: center;
+    margin: 2rem 0;
+  }
+
   .about_container-experience-education {
     flex-direction: column;
     gap: 1rem;
+    align-items: center; /* center the boxes */
+    width: 100%;
   }
 
   .about__info {
-    padding: 1.5rem 2rem;
     width: 100%;
+    max-width: 300px;
+    padding: 1.5rem 2rem;
+    text-align: center;
   }
 
   .about_description {
     padding: 1rem;
     max-width: 100%;
+    text-align: justify;
   }
 
   /* Experience Section */
@@ -456,16 +490,26 @@ footer {
   .about-containers {
     flex-direction: column;
     gap: 1rem;
+    align-items: center;
   }
 
   .details-container {
-    padding: 1.5rem 2rem;
     width: 100%;
+    max-width: 350px;
+    padding: 1.5rem 2rem;
+    align-items: center;
   }
 
   .article-container {
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+  }
+
+  .article-container article {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
   }
 
   /* Contact Section */
@@ -476,6 +520,10 @@ footer {
   .contact-info {
     flex-direction: column;
     gap: 1rem;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
   }
 
   /* Footer */
