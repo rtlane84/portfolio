@@ -557,39 +557,40 @@ footer {
     height: auto;
   }
   article-container {
-    flex-direction: column;
-    gap: 0.75rem;
-    align-items: stretch;
+    flex-direction: column; /* stack the skill blocks vertically */
+    gap: 1rem;
+    align-items: center;
   }
 
   .article-container article {
-    display: flex;
+    display: flex; /* icon + text side by side */
+    flex-direction: row; /* keep icon and text in a row */
     align-items: center;
     justify-content: flex-start;
     gap: 0.75rem;
     width: 100%;
+    max-width: 280px; /* prevent text from wrapping weirdly */
     box-sizing: border-box;
     padding: 0.25rem 0;
-    text-align: left;
   }
 
-  .article-container article .icon,
-  .article-container article img.icon {
+  .article-container article .icon {
     width: 28px;
     height: 28px;
-    flex: 0 0 28px;
-    object-fit: contain;
-    display: block;
+    flex-shrink: 0;
   }
 
   .article-container article > div {
-    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column; /* stack h3 and p vertically */
+    gap: 0.15rem;
     text-align: left;
+    flex: 1;
   }
 
   .article-container article h3,
   .article-container article p {
     margin: 0;
-    text-align: left;
+    line-height: 1.2;
   }
 }
