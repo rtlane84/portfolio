@@ -556,4 +556,40 @@ footer {
     max-width: 100%;
     height: auto;
   }
+  article-container {
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: stretch;
+  }
+
+  .article-container article {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.25rem 0;
+    text-align: left;
+  }
+
+  .article-container article .icon,
+  .article-container article img.icon {
+    width: 28px;
+    height: 28px;
+    flex: 0 0 28px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .article-container article > div {
+    flex: 1 1 auto;
+    text-align: left;
+  }
+
+  .article-container article h3,
+  .article-container article p {
+    margin: 0;
+    text-align: left;
+  }
 }
